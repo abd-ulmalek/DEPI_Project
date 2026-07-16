@@ -1,0 +1,279 @@
+# 📊 Supply Chain Analyzer & Prediction System
+
+## Overview
+
+Supply Chain Analyzer & Prediction System is a Flask-based web application designed to help businesses analyze sales performance and generate future predictions using Machine Learning.
+
+The system allows users to upload Supply Chain datasets, perform automated analysis, generate business insights, visualize KPIs, and predict future Revenue and Profit using advanced forecasting models.
+
+---
+
+## Features
+
+### Data Analysis
+
+* Upload CSV and Excel files
+* Automatic data preprocessing
+* Sales performance analysis
+* Revenue and profit insights
+* KPI generation
+* Historical analysis tracking
+
+### Machine Learning & Forecasting
+
+* Revenue Prediction
+* Profit Prediction
+* Time-Series Forecasting
+* Automated Feature Engineering
+* Model Optimization
+
+### Dashboard
+
+* Interactive visualizations
+* Business insights
+* Performance metrics
+* Forecasting reports
+
+### User Management
+
+* User Authentication
+* Login & Registration
+* Analysis History
+* Session Management
+
+---
+
+## Project Structure
+
+```text
+Analyzier & Prediction/
+│
+├── app.py
+├── auth.py
+├── config.py
+├── db.py
+├── file_handler.py
+├── requirements.txt
+│
+├── data/
+│   └── reports/
+│
+├── ml/
+│   ├── feature_engineering.py
+│   ├── forecasting_engine.py
+│   ├── model.py
+│   ├── pipeline.py
+│   ├── preprocessing.py
+│   └── trained_models/
+│
+├── static/
+│   ├── css/
+│   └── js/
+│
+├── templates/
+│   ├── login.html
+│   ├── upload.html
+│   ├── dashboard.html
+│   └── history.html
+│
+├── uploads/
+└── flask_sessions/
+```
+
+---
+
+## Technologies Used
+
+### Backend
+
+* Python 3.12+
+* Flask
+* Flask-Session
+* MySQL
+
+### Data Analysis
+
+* Pandas
+* NumPy
+* OpenPyXL
+
+### Machine Learning
+
+* Scikit-Learn
+* XGBoost
+* LightGBM
+* CatBoost
+* Prophet
+* Statsmodels
+* Optuna
+* SHAP
+
+### Visualization
+
+* Plotly
+
+---
+
+## Installation
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/USERNAME/Analyzier-Prediction.git
+
+cd Analyzier-Prediction
+```
+
+---
+
+### 2. Create Virtual Environment
+
+#### Windows
+
+```bash
+python -m venv venv
+
+venv\Scripts\activate
+```
+
+#### Linux / macOS
+
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
+```
+
+---
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 4. Configure Database
+
+Create a MySQL database and update the database credentials inside:
+
+```python
+config.py
+```
+
+Example:
+
+```python
+MYSQL_HOST = "localhost"
+MYSQL_USER = "root"
+MYSQL_PASSWORD = "your_password"
+MYSQL_DATABASE = "supply_chain_analysis"
+```
+
+---
+
+### 5. Run Application
+
+```bash
+python app.py
+```
+
+Application will start locally on:
+
+```text
+http://127.0.0.1:5000
+```
+
+---
+
+## Usage
+
+### Login
+
+Create an account and log in.
+
+### Upload Dataset
+
+Upload a CSV or Excel Supply Chain dataset.
+
+### Analyze Data
+
+The system automatically:
+
+* Cleans data
+* Generates KPIs
+* Creates business insights
+* Stores analysis history
+
+### Generate Predictions
+
+The forecasting engine predicts:
+
+* Future Revenue
+* Future Profit
+* Sales Trends
+
+### View Dashboard
+
+Access the dashboard for:
+
+* Charts
+* Metrics
+* Predictions
+* Insights
+
+---
+
+## Required Dataset Fields
+
+Typical dataset should contain:
+
+```text
+Order Date
+Revenue
+Profit
+Quantity
+Category
+Sub-Category
+Region
+Customer Segment
+```
+
+---
+
+## Requirements
+
+The complete list of dependencies is available in:
+
+```text
+requirements.txt
+```
+
+Install all requirements using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Future Improvements
+
+* Power BI Integration
+* Real-Time Forecasting
+* Cloud Deployment
+* Multi-Company Support
+* Advanced KPI Monitoring
+* AI Business Recommendations
+
+---
+
+## Author
+
+### DEPI > ONL4_DAT1_S1 > Supply Chain Team (Abdulmalik Mahmoud, Mohamed Hany, Yousab Magid, Manar Ibrahim, Hadeer Abd Elsattar, Nada Khaled)
+
+Data Analyst | Data Science Enthusiast
+
+GitHub:
+https://github.com/abd-ulmalek/DEPI_Project
